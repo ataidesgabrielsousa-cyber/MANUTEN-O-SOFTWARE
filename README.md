@@ -5,4 +5,5 @@ do Git.
 - README.md
 - index.html
 - style.css
-- script.js
+- script.js## Fluxo de trabalho
+Este projeto utiliza GitHub Flow.
