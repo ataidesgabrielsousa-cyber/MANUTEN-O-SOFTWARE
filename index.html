@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-
-<meta name="viewport" content="width=device-
-width, initial-scale=1.0" />
-
-<title>Projeto Git</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gatinhos Aleatórios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Mono:wght@300;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1>Olá, Git!</h1>
-<button id="botao">Clique aqui</button>
-<script src="script.js"></script>
+
+  <header>
+    <p class="eyebrow">Cataas · cat-as-a-service</p>
+    <h1>Gatinhos<br><em>Aleatórios</em></h1>
+    <p class="subtitle">cada clique, um novo felino</p>
+  </header>
+
+  <div class="card">
+    <div class="image-frame">
+      <div class="skeleton" id="skeleton">🐾</div>
+      <img id="cat-img" alt="Gatinho aleatório" />
+    </div>
+
+    <div class="tag-bar">
+      <div class="dot"></div>
+      <span id="status-text">carregando…</span>
+      <span class="counter" id="counter">0 fotos</span>
+    </div>
+
+    <div class="controls">
+      <button class="btn-primary" id="btn-fetch">
+        <span id="btn-icon">✦</span> Buscar Gatinho
+      </button>
+      <button class="btn-secondary" id="btn-open" disabled title="Abrir em nova aba">↗</button>
+    </div>
+  </div>
+
+  <div class="history-section" id="history-section" style="display:none">
+    <p class="history-label">Histórico</p>
+    <div class="history-grid" id="history-grid"></div>
+  </div>
+
+  <footer>
+    fonte: <a href="https://cataas.com" target="_blank">cataas.com</a> · cat as a service
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
